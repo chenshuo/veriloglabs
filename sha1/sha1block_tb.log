@@ -1,5 +1,5 @@
 VCD info: dumpfile sha1block_tb.vcd opened for output.
-VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
+VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
  i  rst   word   |  t words[0] |
   0  0  00000000 |  0 xxxxxxxx | 00000000 00000000 00000000 00000000 00000000
   1  1  00000000 |  0 00000000 | 00000000 00000000 00000000 00000000 00000000
