@@ -1,2 +1,5 @@
 a.out
+*.bak
 *.swp
+*.vcd
+
