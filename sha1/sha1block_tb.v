@@ -50,7 +50,7 @@ module sha1block_tb;
     restart = 0;
     #3 nrst = 0;
     #20 nrst = 1;
-    #860 $finish;
+    #900 $finish;
   end
 
   initial begin
