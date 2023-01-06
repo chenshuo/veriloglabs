@@ -3,3 +3,10 @@ a.out
 *.swp
 *.vcd
 
+*.summary
+*.rpt
+*.qpf
+*.qsf
+db/
+incremental_db/
+
