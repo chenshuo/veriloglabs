@@ -1,5 +1,5 @@
 VCD info: dumpfile key_schedule_tb.vcd opened for output.
-VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
  0 xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx
  0 00000000 00000000 00000000 00000000
  1 2b7e1516 28aed2a6 abf71588 09cf4f3c

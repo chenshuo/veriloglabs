@@ -1,5 +1,5 @@
 VCD info: dumpfile aes_encrypt_core_basic_tb.vcd opened for output.
-VCD warning: $dumpvars: Package ($unit) is not dumpable with VCD.
+VCD warning: $dumpvars: Unsupported argument type (vpiPackage)
  0 00000000000000000000000000000000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
  0 00000000000000000000000000000000 00000000000000000000000000000000
  1 3243f6a8885a308d313198a2e0370734 2b7e151628aed2a6abf7158809cf4f3c

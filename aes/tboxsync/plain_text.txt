@@ -1,1 +1,1 @@
-../tbox/plain_text.txt
+../plain_text.txt

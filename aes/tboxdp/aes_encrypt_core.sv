@@ -18,17 +18,25 @@ module aes_encrypt_core (
   wire[31:0]  Te20, Te21, Te22, Te23;
   wire[31:0]  Te30, Te31, Te32, Te33;
 
-  Tbox #("tbox0.mem") t0b0(.clk(clk), .in1(st0[31:24]), .out1(Te00), .in2(st1[31:24]), .out2(Te10));
-  Tbox #("tbox0.mem") t0b2(.clk(clk), .in1(st2[31:24]), .out1(Te20), .in2(st3[31:24]), .out2(Te30));
+  Tbox #("tbox0.mem") t0b0(.clk(clk), .in1(st0[31:24]), .out1(Te00),
+                                      .in2(st1[31:24]), .out2(Te10));
+  Tbox #("tbox0.mem") t0b2(.clk(clk), .in1(st2[31:24]), .out1(Te20),
+                                      .in2(st3[31:24]), .out2(Te30));
 
-  Tbox #("tbox1.mem") t1b0(.clk(clk), .in1(st1[23:16]), .out1(Te01), .in2(st2[23:16]), .out2(Te11));
-  Tbox #("tbox1.mem") t1b2(.clk(clk), .in1(st3[23:16]), .out1(Te21), .in2(st0[23:16]), .out2(Te31));
+  Tbox #("tbox1.mem") t1b0(.clk(clk), .in1(st1[23:16]), .out1(Te01),
+                                      .in2(st2[23:16]), .out2(Te11));
+  Tbox #("tbox1.mem") t1b2(.clk(clk), .in1(st3[23:16]), .out1(Te21),
+                                      .in2(st0[23:16]), .out2(Te31));
 
-  Tbox #("tbox2.mem") t2b0(.clk(clk), .in1(st2[15:8]), .out1(Te02), .in2(st3[15:8]), .out2(Te12));
-  Tbox #("tbox2.mem") t2b2(.clk(clk), .in1(st0[15:8]), .out1(Te22), .in2(st1[15:8]), .out2(Te32));
+  Tbox #("tbox2.mem") t2b0(.clk(clk), .in1(st2[15:8]),  .out1(Te02),
+                                      .in2(st3[15:8]),  .out2(Te12));
+  Tbox #("tbox2.mem") t2b2(.clk(clk), .in1(st0[15:8]),  .out1(Te22),
+                                      .in2(st1[15:8]),  .out2(Te32));
 
-  Tbox #("tbox3.mem") t3b0(.clk(clk), .in1(st3[7:0]), .out1(Te03), .in2(st0[7:0]), .out2(Te13));
-  Tbox #("tbox3.mem") t3b2(.clk(clk), .in1(st1[7:0]), .out1(Te23), .in2(st2[7:0]), .out2(Te33));
+  Tbox #("tbox3.mem") t3b0(.clk(clk), .in1(st3[7:0]),   .out1(Te03),
+                                      .in2(st0[7:0]),   .out2(Te13));
+  Tbox #("tbox3.mem") t3b2(.clk(clk), .in1(st1[7:0]),   .out1(Te23),
+                                      .in2(st2[7:0]),   .out2(Te33));
 
   wire[31:0]  ik3sb, rcon;
 

@@ -8,7 +8,7 @@ module aes_encrypt_core_basic_tb;
   wire[127:0] cipher_text, round_key;
   reg[127:0]  plain_text, key;
 
-  aes_encrypt_core_basic dut(.clk(clk), .nrst(nrst), .start(start), .finish(finish), .bus_free(bus_free),
+  aes_encrypt_core dut(.clk(clk), .nrst(nrst), .start(start), .finish(finish), .bus_free(bus_free),
     .plain_text(plain_text), .key(key), .cipher_text(cipher_text));
 
   assign round_key = { dut.rk0, dut.rk1, dut.rk2, dut.rk3 };

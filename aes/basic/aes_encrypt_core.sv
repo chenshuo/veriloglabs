@@ -1,4 +1,4 @@
-module aes_encrypt_core_basic (
+module aes_encrypt_core (
   input           clk, nrst, start,
   input [127:0]   plain_text, key,
   output [127:0]  cipher_text,
