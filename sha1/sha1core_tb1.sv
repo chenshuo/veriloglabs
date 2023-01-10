@@ -4,10 +4,10 @@ module sha1core_tb1;
   reg clk, nrst;
   reg wr;
   reg [31:0] data;
-  uwire[31:0] h0, h1, h2, h3, h4;
-  uwire busy;
+  wire[31:0] h0, h1, h2, h3, h4;
+  wire busy;
 
-  uwire [159:0] digest = { h0, h1, h2, h3, h4 };
+  wire [159:0] digest = { h0, h1, h2, h3, h4 };
 
   sha1core dut(clk, nrst, wr, data,
     h0, h1, h2, h3, h4, busy);
